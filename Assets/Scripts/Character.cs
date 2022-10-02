@@ -63,7 +63,7 @@ public class Character : MonoBehaviour
             health -= character.currentGun.GetComponent<GunHandler>().damage;
         }
            
-        if (health < 0)
+        if (health <= 0)
         {
             
             //give Kill to Character
