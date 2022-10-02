@@ -66,7 +66,7 @@ public class Character : MonoBehaviour
         if (health < 0)
         {
             
-            //Kill Character
+            //give Kill to Character
             character.kills++;
             
             //Update Kills in Leaderboard
@@ -86,6 +86,7 @@ public class Character : MonoBehaviour
                 GameManager.gameManager.gameOver = true;
                 return;
             }
+            //Kill Character
             Destroy(this.gameObject);
         }
     }
